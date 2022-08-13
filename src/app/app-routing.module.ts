@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './MainPortal/Home/home/home.component';
+import { PageNotFoundComponent } from './MainPortal/Page-Not-Found/page-not-found/page-not-found.component';
+import { ShopComponent } from './MainPortal/Shop/shop/shop.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
-  {path:'home', component:HomeComponent},
-  {path:'contact-us', component:ContactUsComponent}
+  { path:'' , component:HomeComponent },
+  { path:'home' , component:HomeComponent },
+  { path:'shop' , component:ShopComponent },
+  { path:'**', component:PageNotFoundComponent}
 ];
 
 @NgModule({

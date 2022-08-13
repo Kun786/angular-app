@@ -1,0 +1,29 @@
+.btn{
+    font-family: 'Tiro Telugu';
+    background-color: black;
+    /* color: white; */
+}
+.btn:hover{background-color: grey;}
+.image{
+    background: url('../../../../assets/jar-min-min.jpg') no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    /* width: 100vw; */
+}
+.image-h1{
+    font-family: 'Tiro Telugu';
+    font-weight: 700;
+    font-size: 3.8rem;
+}
+.catagories-h1{
+    font-family: 'Tiro Telugu';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+i{
+    font-size: 1.5rem;
+}
+.icon-p{
+    color: rgb(0, 0,0,0.1);
+}

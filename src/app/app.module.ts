@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeaderComponent } from './MainPortal/Header/header/header.component';
+import { FooterComponent } from './MainPortal/Footer/footer/footer.component';
+import { HomeComponent } from './MainPortal/Home/home/home.component';
+import { ShopComponent } from './MainPortal/Shop/shop/shop.component';
+import { PageNotFoundComponent } from './MainPortal/Page-Not-Found/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactUsComponent
+    ShopComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
