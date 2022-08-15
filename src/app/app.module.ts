@@ -8,6 +8,7 @@ import { FooterComponent } from './MainPortal/Footer/footer/footer.component';
 import { HomeComponent } from './MainPortal/Home/home/home.component';
 import { ShopComponent } from './MainPortal/Shop/shop/shop.component';
 import { PageNotFoundComponent } from './MainPortal/Page-Not-Found/page-not-found/page-not-found.component';
+import { DirectivesComponent } from './MainPortal/directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PageNotFoundComponent } from './MainPortal/Page-Not-Found/page-not-foun
     HomeComponent,
     ShopComponent,
     PageNotFoundComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule,
