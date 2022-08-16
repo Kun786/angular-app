@@ -9,6 +9,7 @@ import { HomeComponent } from './MainPortal/Home/home/home.component';
 import { ShopComponent } from './MainPortal/Shop/shop/shop.component';
 import { PageNotFoundComponent } from './MainPortal/Page-Not-Found/page-not-found/page-not-found.component';
 import { DirectivesComponent } from './MainPortal/directives/directives.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { DirectivesComponent } from './MainPortal/directives/directives.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

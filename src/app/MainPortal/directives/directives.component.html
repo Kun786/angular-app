@@ -1,19 +1,36 @@
 <br><br><br><br><br><br><br>
 <div class="container">
-    <h1>Directive</h1>
-    <button class="btn btn-outline-success" (click)="GetMyAllData()">GetData</button>
-    <br>
-    <div class="row">
-        <div class="col my-5" *ngFor="let abc of MyData">
-            <div class="card" style="width: 18rem;">
-                <!-- <img *ngFor="let newabc of abc.Image" [src]="newabc" class="card-img-top" alt="..."> -->
-                <img  [src]="abc.Image[1]" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">{{abc.Name}}</h5>
-                  <p class="card-text">{{abc.Description}}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+  <h1>Directive</h1>
+  <button class="btn btn-outline-success" (click)="GetMyAllData()">GetData</button>
+  <br>
+  <div class="row">
+    <div class="col my-5" *ngFor="let abc of MyData">
+      <div class="card" style="width: 18rem;">
+        <!-- <img *ngFor="let newabc of abc.Image" [src]="newabc" class="card-img-top" alt="..."> -->
+        <img [src]="abc.Image[1]" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{abc.Name}}</h5>
+          <p class="card-text">{{abc.Description}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="row">
+    <form [formGroup]="MyForm" (ngSubmit)="SubmitMyForm()">
+      <div class="mb-3">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" formControlName="FirstName">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" formControlName="LastName">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="Email">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </div>
